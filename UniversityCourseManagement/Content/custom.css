@@ -19,6 +19,7 @@
     height: 6.5vh;
 }
 
-.courseListMenu {
-
+.btn-primary {
+    border-radius: .5rem !important;
+    background: #013880 !important;
 }
