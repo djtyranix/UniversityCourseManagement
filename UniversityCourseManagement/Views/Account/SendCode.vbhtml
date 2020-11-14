@@ -15,7 +15,7 @@ End Code
         <div class="col-md-8">
             Select Two-Factor Authentication Provider:
             @Html.DropDownListFor(Function(model) model.SelectedProvider, Model.Providers)
-            <input type="submit" value="Submit" class="btn btn-default" />
+            <input type="submit" value="Submit" class="btn btn-primary" />
         </div>
     </div>
     </text>

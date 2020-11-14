@@ -32,7 +32,7 @@ End Code
                                         @<div>
                                             @Html.Hidden("loginProvider", account.LoginProvider)
                                             @Html.Hidden("providerKey", account.ProviderKey)
-                                            <input type="submit" class="btn btn-default" value="Remove" title="Remove this @account.LoginProvider login from your account" />
+                                            <input type="submit" class="btn btn-primary" value="Remove" title="Remove this @account.LoginProvider login from your account" />
                                         </div>
                                     End Using
                                 Else
@@ -54,7 +54,7 @@ End Code
                 @<div id="socialLoginList">
                 <p>
                     @For Each p As AuthenticationDescription In Model.OtherLogins
-                        @<button type="submit" class="btn btn-default" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account">@p.AuthenticationType</button>
+                        @<button type="submit" class="btn btn-primary" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account">@p.AuthenticationType</button>
                     Next
                 </p>
                 </div>

@@ -10,17 +10,15 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             @Html.ActionLink("Smart Learn", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
 
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav mr-auto">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", New With {.area = ""}, New With {.class = "nav-link"})</li>
                     <li class="nav-item">@Html.ActionLink("API", "Index", "Help", New With {.area = "HelpPage"}, New With {.class = "nav-link"})</li>
                 </ul>
