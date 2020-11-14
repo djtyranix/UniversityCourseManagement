@@ -5,7 +5,7 @@ Public Module BundleConfig
     ' For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
     Public Sub RegisterBundles(bundles As BundleCollection)
         bundles.Add(New ScriptBundle("~/bundles/jquery").Include(
-            "~/Scripts/jquery-{version}.js"))
+            "~/Scripts/jquery-3.5.1.js"))
 
         bundles.Add(New ScriptBundle("~/bundles/jqueryval").Include(
             "~/Scripts/jquery.unobtrusive*",
@@ -29,10 +29,11 @@ Public Module BundleConfig
             "~/Scripts/modernizr-*"))
 
         bundles.Add(New ScriptBundle("~/bundles/bootstrap").Include(
-            "~/Scripts/bootstrap.js"))
+            "~/Scripts/bootstrap.bundle.js"))
 
         bundles.Add(New StyleBundle("~/Content/css").Include(
             "~/Content/bootstrap.css",
-            "~/Content/Site.css"))
+            "~/Content/Site.css",
+            "~/Content/custom.css"))
     End Sub
 End Module

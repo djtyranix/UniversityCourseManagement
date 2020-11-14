@@ -10,17 +10,17 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar navbar-expand-lg navbar-dark mb-md-5 nav-custom">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             @Html.ActionLink("Smart Learn", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
 
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", New With {.area = ""}, New With {.class = "nav-link"})</li>
-                    <li class="nav-item">@Html.ActionLink("API", "Index", "Help", New With {.area = "HelpPage"}, New With {.class = "nav-link"})</li>
+                    <li class="nav-item">@Html.ActionLink("Course", "Index", "Course", New With {.area = ""}, New With {.class = "nav-link", .onclick = "alert('This feature is on Development.'); return false;"})</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -31,7 +31,7 @@
         @RenderSection("SPAViews", required:=False)
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Smart Learn System</p>
         </footer>
     </div>
 
